@@ -1,0 +1,224 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root{
+  --bcolor: #4146A6;
+  --hcolor: #ffffff;
+  --pink: rgb(255,182,193, 0.8);
+  --h1: 3rem;
+  --h2: 2rem;
+  --h3: 1.4rem;
+  --bRadius: 1rem;
+}
+
+html, body{
+  height: 100%;
+  color: #736156;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  background-image: url(../img/christian-fregnan-pRrG0g7A30Q-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* CSS HEADERS */
+
+h1{
+  font-size: var(--h1);
+  font-family: 'Bebas Neue', cursive;
+  color: var(--hcolor);
+}
+
+h2{
+  font-size: var(--h2);
+  color: var(--hcolor);
+}
+
+h3{
+  font-size: var(--h3);
+  color: var(--hcolor);
+}
+
+/* CSS LANDING PAGE */
+
+.header{
+  height: 15vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--pink);
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+}
+
+.article__card{
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  width: 60vw;
+  height: 60vh;
+  margin: 10vh auto;
+  border-radius: var(--bRadius);
+}
+
+.application__heading{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--bRadius);
+}
+
+.jersey__img{
+  width: 60%;
+}
+
+.jersey__styling{
+  position: absolute;
+  color: var(--hcolor);
+  font-size: var(--h1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15vh;
+}
+
+.jersey__name, .jersey__number{
+  margin-top: 2vh;
+  height: 50%;
+}
+
+.application-form{
+    margin: 0 auto;
+}
+.application__title{
+  padding-top: 1rem;
+}
+
+/* CSS FORM */
+.form-general{
+    margin-top: 2rem ;
+    width: 25rem;
+}
+
+.form-general__field{
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.4);
+    background: transparent;
+    margin-bottom: 2rem;
+    height: 4vh;  
+    width: 80%;  
+}
+
+.form__submit{
+    background-color: var(--pink);
+    color: var(--h1);
+    border: none;
+    border-radius: var(--bRadius);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* CSS START SECOND PART */
+.article{
+  background-color: rgba(240, 128, 128, 0.8);
+  height: 100vh;
+}
+
+.article__header{
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/* CSS DRAFT BOARD */
+.draftorder__layout{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.draftorder{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.5rem 0.5rem;
+  grid-template-areas:
+    "p1 grid__mid p6"
+    "p2 grid__mid p7"
+    "p3 grid__mid p8"
+    "p4 grid__mid p9"
+    "p5 grid__mid p10";
+    width: 80%;
+}
+
+.draftorder__pick{
+  height: 5vh;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  padding-top: 1vh;
+}
+.pick__1{
+  grid-area:p1;
+}
+.pick__2{
+  grid-area:p2;
+}
+.pick__3{
+  grid-area:p3;
+}
+.pick__4{
+  grid-area: p4;
+}
+.pick__5{
+  grid-area: p5;
+}
+.grid__mid{
+  border: none;
+  grid-area: grid__mid;
+  text-align: center;
+}
+.draftorder__player{
+    margin-left: 1rem;
+}
+/* CSS DRAFT ANNOUNCEMENT */
+
+.announcement{
+  background-color: var(--hcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 30vh;
+  margin: auto;
+  border-radius: var(--bRadius);
+  position: absolute;
+    -webkit-transition: opacity 20s ease-in;
+       -moz-transition: opacity 20s ease-in;
+        -ms-transition: opacity 20s ease-in;
+         -o-transition: opacity 20s ease-in;
+            transition: opacity 20s ease-in;
+}
+
+.announcement__message{
+  font-size: var(--h2);
+  text-align: center;
+  color: black;
+  
+}

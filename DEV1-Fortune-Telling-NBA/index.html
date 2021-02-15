@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
+    <title>NBA Draft</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Get drafted in the NBA</h1>
+        <h2 class="header__subtitle">Ever wondered who would pick you?</h2>
+    </header>
+
+    <main class="main">
+        <div class="article__card">
+            <div class="application__heading">
+                <img class="jersey__img" src="./img/blank_jersey.png" alt="blank jersey">
+                <div class="jersey__styling">
+                    <div class="jersey__name"></div>
+                    <div class="jersey__number"></div>
+                </div>
+            </div>
+            <div class="application-form">
+                <h2 class="application__title">NBA application form</h2>
+                <form class="form-general" action="index.html" method="post">
+                    <input class="form-general__field form__name" type="text" placeholder="Last Name" name="name"
+                        required>
+                    <input class="form-general__field form__number" type="text" placeholder="Number" name="number"
+                        minlength="1" maxlength="2" required>
+                    <select class="form-general__field form__training" name="training">
+                        <option disabled="disabled" selected="selected">Training</option>
+                        <option value="1">morning</option>
+                        <option value="2">evening</option>
+                    </select>
+                    <select class="form-general__field form__lifestyle" name="lifestyle">
+                        <option disabled="disabled" selected="selected">Lifestyle</option>
+                        <option value="1">city</option>
+                        <option value="2">nature</option>
+                        <option value="3">beach</option>
+                    </select>
+                    <input type="submit" class="form__submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <article class="article">
+        <h2 class="article__header">Welcome to the NBA Lottery Draft!</h2>
+        <div class="article__card draftorder__layout">
+            <div class="draftorder">
+                <div class="draftorder__pick pick__1">1
+                    <p class="draftorder__player"></p>
+                </div>
+                <div class="draftorder__pick pick__2">2
+                    <p class="draftorder__player"></p>
+                </div>
+                <div class="draftorder__pick pick__3">3
+                    <p class="draftorder__player"></p>
+                </div>
+                <div class="draftorder__pick pick__4">4
+                    <p class="draftorder__player"></p>
+                </div>
+                <div class="draftorder__pick pick__5">5
+                    <p class="draftorder__player"></p>
+                </div>
+                <div class="draftorder__pick">6
+                    <p class="draftorder__player"></p>
+                </div>
+                <div class="draftorder__pick">7
+                    <p class="draftorder__player"></p>
+                </div>
+                <div class="draftorder__pick">8
+                    <p class="draftorder__player"></p>
+                </div>
+                <div class="draftorder__pick">9
+                    <p class="draftorder__player"></p>
+                </div>
+                <div class="draftorder__pick">10
+                    <p class="draftorder__player"></p>
+                </div>
+                <h3 class="draftorer__pick grid__mid">Draft Lottery 2020</h3>
+            </div>
+            <div class="announcement">
+                <p class="announcement__message">The draft will start soon</p>
+            </div>
+        </div>
+    </article>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
